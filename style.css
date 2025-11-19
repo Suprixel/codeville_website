@@ -45,7 +45,21 @@ section{
 }
 
 .otherbackground{
-    background-color: var(--color5);
+    background: linear-gradient(135deg, #FF6B9D 0%, #FFA600 25%, #FFD700 50%, #FF6B9D 100%);
+    background-size: 400% 400%;
+    animation: festive-gradient 15s ease infinite;
+}
+
+@keyframes festive-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 section p{
@@ -89,19 +103,24 @@ nav a {
 }
 
 button {
-    background-color: var(--color1);
-    border-radius: 10px;
+    background: linear-gradient(135deg, #FF6B9D 0%, #FFA600 100%);
+    border-radius: 25px;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 40px;
     cursor: pointer;
     margin-top: 10px;
-    transition: padding 0.3s;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
 }
 
 button:hover {
-    background-color: var(--color2);
-    padding: 10px 40px;
+    background: linear-gradient(135deg, #FFA600 0%, #FF6B9D 100%);
+    padding: 15px 50px;
+    box-shadow: 0 6px 20px rgba(255, 107, 157, 0.6);
+    transform: translateY(-2px);
 }
 
 .indice{
